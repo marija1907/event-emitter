@@ -1,5 +1,5 @@
-var Emitt = require('./emitter1');
-
+//var Emitt = require('./emitter1'); when we use file emitter1.js
+var Emitt = require('events');//without using emitter1.js file
 var emit = new Emitt();
 
 emit.on('someMessage',function(){
